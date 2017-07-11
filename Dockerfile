@@ -1,4 +1,4 @@
-FROM maxicredito/base-wildfly
+FROM maxicredito/wildfly-base
 
 MAINTAINER Carlos Bittarello <cbittarello@gmail.com>
 
