@@ -20,4 +20,4 @@ ENV JAVA_OPTS ''
 
 EXPOSE 8080 8443
 
-CMD ["/opt/wildfly/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+CMD ["/opt/wildfly/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-c", "standalone-ha.xml"]
