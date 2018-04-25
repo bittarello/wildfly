@@ -10,7 +10,7 @@ USER wildfly
 
 ENV JAVA_HOME /usr/lib/jvm/java
 
-ENV WILDFLY_VERSION 11.0.0.Final
+ENV WILDFLY_VERSION 10.0.0.Final
 
 RUN cd $HOME && curl http://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz | tar zx && mv $HOME/wildfly-$WILDFLY_VERSION $HOME/wildfly
 
