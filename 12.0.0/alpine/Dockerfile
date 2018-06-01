@@ -13,6 +13,8 @@ RUN cd $HOME && \
     mv $HOME/wildfly-$WILDFLY_VERSION $JBOSS_HOME && \
     rm -rf wildfly-$WILDFLY_VERSION.tar.gz
 
+USER wildfly
+
 EXPOSE 8080
 
 CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
