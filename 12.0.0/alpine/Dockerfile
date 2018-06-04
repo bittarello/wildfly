@@ -6,7 +6,7 @@ ENV WILDFLY_VERSION 12.0.0.Final
 
 ENV JBOSS_HOME /opt/wildfly
 
-RUN RUN addgroup -g 1000 -S username && \
+RUN addgroup -g 1000 -S username && \
     adduser -u 1000 -S username -G username && \
 	chmod 755 /opt/wildfly
 
