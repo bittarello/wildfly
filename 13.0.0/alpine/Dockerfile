@@ -11,7 +11,7 @@ RUN cd $HOME && mkdir /opt && mkdir /opt/wildfly && \
     adduser -u 1000 -S wildfly -G wildfly && \
 	wget -q http://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz && \
 	tar xzvf wildfly-$WILDFLY_VERSION.tar.gz && \
-    mv $HOME/wildfly-$WILDFLY_VERSION/* $JBOSS_HOME && \
+    mv -f $HOME/wildfly-$WILDFLY_VERSION/* $JBOSS_HOME && \
     rm -rf wildfly-$WILDFLY_VERSION.tar.gz && \
 	chown -R wildfly:0 ${JBOSS_HOME} && \
 	chmod -R g+rw ${JBOSS_HOME}
